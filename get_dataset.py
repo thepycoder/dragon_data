@@ -1,4 +1,5 @@
 from pathlib import Path
+import shutil
 import os
 
 from tqdm import tqdm
@@ -35,3 +36,4 @@ if __name__ == '__main__':
             get_images('train')
         if check_or_create_folder(DATA_FOLDER / 'val'):
             get_images('val')
+        shutil.copytree(ANNOTATION_FOLDER, DATA_FOLDER / 'annotations')
