@@ -3,6 +3,7 @@
 ## Getting the dataset
 To get the dataset, you'll first have to download the images. There's only about 100 of them, so this won't take long. The links to all the images are in the `annotations` folder, but can automatically be downloaded by using the `get_dataset.py` script. This script will create a folder called `data` with 2 additional folders inside: `train` and `val` containing all the training and validation images respectively.
 ```
+pip install -r requirements.txt
 python get_dataset.py
 ```
 
